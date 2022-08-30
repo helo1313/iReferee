@@ -104,7 +104,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Sign up">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
-                                                    <color key="baseForegroundColor" name="App TextField"/>
+                                                    <color key="baseForegroundColor" name="App ContrastGrey"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="signUpButtonPressed:" destination="FhM-Kl-8kD" eventType="touchUpInside" id="owU-y7-m01"/>

@@ -18,27 +18,33 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("Loaded Login")
-        // Do any additional setup after loading the view.
+        changeAuthMetod(false)
     }
 
     @IBAction func signInButtonPressed(_ sender: UIButton) {
-        authMetodChange(sender)
+        changeAuthMetod(sender)
         
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
-        authMetodChange(sender)
+        changeAuthMetod(sender)
     }
     
     @IBAction func confirmButtonPressed(_ sender: UIButton) {
     }
     
-    func authMetodChange(_ sender: UIButton){
+    func changeAuthMetod(_ sender: UIButton){
         signInButton.titleLabel?.textColor = UIColor(named: "App TextField")
         signUpButton.titleLabel?.textColor = UIColor(named: "App TextField")
         sender.titleLabel?.textColor = UIColor(named: "App ContrastGrey")
-        print(sender.titleLabel!)
+        
+        confirmButton.titleLabel?.text = sender.titleLabel?.text == "Sign in" ? "Log in" : "Register"
+    }
+    
+    func changeAuthMetod(_ isSignIn: Bool){
+        signInButton.titleLabel?.textColor = isSignIn ? UIColor(named: "App ContrastGrey") : UIColor(named: "App TextField")
+        signUpButton.titleLabel?.textColor = isSignIn ? UIColor(named: "App TextField") : UIColor(named: "App ContrastGrey")
+        confirmButton.titleLabel?.text = isSignIn ? "Log in" : "Register"
     }
     
 
