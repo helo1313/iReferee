@@ -32,7 +32,7 @@
                                             <color key="baseForegroundColor" name="App Dark Green"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="FhM-Kl-8kD" kind="show" id="jtP-I6-oM5"/>
+                                            <segue destination="FhM-Kl-8kD" kind="show" id="0h6-1x-l6Z"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocp-Ug-RkP">
@@ -46,9 +46,6 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
                                             <color key="baseForegroundColor" name="App Dark Green"/>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="ZG6-72-iFt" kind="show" id="L9M-FE-id3"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -77,22 +74,6 @@
             </objects>
             <point key="canvasLocation" x="933.64485981308405" y="77.753779697624196"/>
         </scene>
-        <!--Register View Controller-->
-        <scene sceneID="JgG-KF-vx9">
-            <objects>
-                <viewController id="ZG6-72-iFt" customClass="RegisterViewController" customModule="iReferee" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DMk-m8-eCb">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="aKS-zI-bFj"/>
-                        <color key="backgroundColor" name="App Dark Green"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="kOO-Dp-yyv"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U98-um-RTt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1676.6355140186915" y="354.42764578833697"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="y2S-2B-WJ3">
             <objects>
@@ -102,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="euK-YC-fzl">
-                                <rect key="frame" x="30" y="485.33333333333326" width="368" height="256.66666666666674"/>
+                                <rect key="frame" x="30" y="487" width="368" height="255"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vg5-em-NXJ">
                                         <rect key="frame" x="0.0" y="0.0" width="368" height="40.333333333333336"/>
@@ -114,21 +95,27 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
                                                     <color key="baseForegroundColor" name="App ContrastGrey"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="signInButtonPressed:" destination="FhM-Kl-8kD" eventType="touchUpInside" id="R5c-Vc-UdG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cty-br-JZk">
                                                 <rect key="frame" x="184" y="0.0" width="184" height="40.333333333333336"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Sign out">
+                                                <buttonConfiguration key="configuration" style="plain" title="Sign up">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
                                                     <color key="baseForegroundColor" name="App TextField"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="signUpButtonPressed:" destination="FhM-Kl-8kD" eventType="touchUpInside" id="owU-y7-m01"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hsj-oZ-2jy">
-                                        <rect key="frame" x="0.0" y="70.333333333333314" width="368" height="106.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="70.333333333333371" width="368" height="104.66666666666669"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lGw-cb-ocI">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lGw-cb-ocI">
                                                 <rect key="frame" x="0.0" y="0.0" width="368" height="45.666666666666664"/>
                                                 <color key="backgroundColor" name="App TextField"/>
                                                 <color key="tintColor" name="App Gray"/>
@@ -136,22 +123,25 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5cV-MM-Fy4">
-                                                <rect key="frame" x="0.0" y="60.666666666666742" width="368" height="45.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="60.666666666666629" width="368" height="44"/>
                                                 <color key="backgroundColor" name="App TextField"/>
                                                 <color key="tintColor" name="App Gray"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmS-cA-AfB">
-                                        <rect key="frame" x="0.0" y="206.66666666666669" width="368" height="50"/>
+                                        <rect key="frame" x="0.0" y="205" width="368" height="50"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log in" cornerStyle="small">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseForegroundColor" name="App Background"/>
                                             <color key="baseBackgroundColor" name="App ContrastGrey"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="confirmButtonPressed:" destination="FhM-Kl-8kD" eventType="touchUpInside" id="nas-E8-bjo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -166,10 +156,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fsu-7t-wnY"/>
+                    <connections>
+                        <outlet property="confirmButton" destination="qmS-cA-AfB" id="R5g-Yc-ThZ"/>
+                        <outlet property="emailTextField" destination="lGw-cb-ocI" id="YV2-2H-llm"/>
+                        <outlet property="passwordTextField" destination="5cV-MM-Fy4" id="7hQ-FA-1vj"/>
+                        <outlet property="signInButton" destination="7LS-gY-Tb3" id="rN8-3B-IvN"/>
+                        <outlet property="signUpButton" destination="Cty-br-JZk" id="Css-rd-oX3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcs-TN-AAz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1676.6355140186915" y="-336.28509719222467"/>
+            <point key="canvasLocation" x="1709" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bKb-Lp-L7c">

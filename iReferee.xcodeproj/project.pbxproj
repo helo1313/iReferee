@@ -17,7 +17,6 @@
 		09EA8FD928B6D7F90072FB06 /* iRefereeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA8FD828B6D7F90072FB06 /* iRefereeUITests.swift */; };
 		09EA8FDB28B6D7F90072FB06 /* iRefereeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA8FDA28B6D7F90072FB06 /* iRefereeUITestsLaunchTests.swift */; };
 		09EA8FEB28BC02160072FB06 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA8FEA28BC02160072FB06 /* LoginViewController.swift */; };
-		09EA8FED28BC02370072FB06 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA8FEC28BC02370072FB06 /* RegisterViewController.swift */; };
 		09EA8FEF28BD42510072FB06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09EA8FEE28BD42510072FB06 /* GoogleService-Info.plist */; };
 		4F31C5F94E507D031797EEAC /* Pods_iReferee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF0304CBD01C12872B955E6 /* Pods_iReferee.framework */; };
 /* End PBXBuildFile section */
@@ -54,7 +53,6 @@
 		09EA8FD828B6D7F90072FB06 /* iRefereeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRefereeUITests.swift; sourceTree = "<group>"; };
 		09EA8FDA28B6D7F90072FB06 /* iRefereeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRefereeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		09EA8FEA28BC02160072FB06 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		09EA8FEC28BC02370072FB06 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		09EA8FEE28BD42510072FB06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0DF0304CBD01C12872B955E6 /* Pods_iReferee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iReferee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B3CB433663B849CDADC97D /* Pods-iReferee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iReferee.debug.xcconfig"; path = "Target Support Files/Pods-iReferee/Pods-iReferee.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 			children = (
 				09EA8FBB28B6D7F80072FB06 /* TitleViewController.swift */,
 				09EA8FEA28BC02160072FB06 /* LoginViewController.swift */,
-				09EA8FEC28BC02370072FB06 /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,7 +170,6 @@
 				B7B3CB433663B849CDADC97D /* Pods-iReferee.debug.xcconfig */,
 				BC47E1FCFC6DE03ADC1C02E4 /* Pods-iReferee.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -362,7 +358,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				09EA8FEB28BC02160072FB06 /* LoginViewController.swift in Sources */,
-				09EA8FED28BC02370072FB06 /* RegisterViewController.swift in Sources */,
 				09EA8FBC28B6D7F80072FB06 /* TitleViewController.swift in Sources */,
 				09EA8FB828B6D7F80072FB06 /* AppDelegate.swift in Sources */,
 				09EA8FBA28B6D7F80072FB06 /* SceneDelegate.swift in Sources */,
