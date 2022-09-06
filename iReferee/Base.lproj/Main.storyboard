@@ -32,7 +32,7 @@
                                             <color key="baseForegroundColor" name="App Dark Green"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="FhM-Kl-8kD" kind="show" id="0h6-1x-l6Z"/>
+                                            <action selector="onLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="igk-E5-mbn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocp-Ug-RkP">
@@ -46,6 +46,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
                                             <color key="baseForegroundColor" name="App Dark Green"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onRegisterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZp-OL-43F"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -69,6 +72,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9Qk-Id-GZu"/>
+                    <connections>
+                        <segue destination="FhM-Kl-8kD" kind="show" identifier="moveToLogin" id="ZK0-RH-QZd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -15,10 +15,12 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmButton: UIButton!
     
+    var navigateAsSignIn: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        changeAuthMetod(false)
+        changeAuthMetod(navigateAsSignIn)
     }
 
     @IBAction func signInButtonPressed(_ sender: UIButton) {
@@ -46,16 +48,5 @@ class LoginViewController: UIViewController {
         signUpButton.titleLabel?.textColor = isSignIn ? UIColor(named: "App TextField") : UIColor(named: "App ContrastGrey")
         confirmButton.titleLabel?.text = isSignIn ? "Log in" : "Register"
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
