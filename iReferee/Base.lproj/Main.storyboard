@@ -138,6 +138,7 @@
                         <outlet property="confirmButton" destination="qmS-cA-AfB" id="R5g-Yc-ThZ"/>
                         <outlet property="emailTextField" destination="lGw-cb-ocI" id="YV2-2H-llm"/>
                         <outlet property="passwordTextField" destination="5cV-MM-Fy4" id="7hQ-FA-1vj"/>
+                        <segue destination="3c2-V2-E2d" kind="show" identifier="loginSuccessful" id="rwi-07-dky"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcs-TN-AAz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -183,6 +184,7 @@
                                             <color key="baseBackgroundColor" name="App ContrastGrey"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="confirmButtonPressed:" destination="cVV-6I-Svu" eventType="touchUpInside" id="NTS-iu-E7a"/>
                                             <action selector="confirmButtonPressed:" destination="FhM-Kl-8kD" eventType="touchUpInside" id="p4V-8Y-riD"/>
                                         </connections>
                                     </button>
@@ -198,10 +200,31 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NOf-A5-wGL"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="AZz-pW-Y2j" id="h1g-P9-PEi"/>
+                        <outlet property="passwordTextField" destination="JWu-Nb-LdK" id="hFI-Ci-lkZ"/>
+                        <segue destination="3c2-V2-E2d" kind="show" identifier="registerSuccessful" id="3k5-ZR-JnJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOd-fc-AuW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1864" y="408"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tKv-Ju-ztC">
+            <objects>
+                <viewController id="3c2-V2-E2d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OhT-Cs-cnS">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XiV-fq-Mbf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="izy-6O-G1J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YLZ-EY-lYn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2923" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bKb-Lp-L7c">
@@ -222,6 +245,9 @@
             <point key="canvasLocation" x="33.644859813084111" y="77.753779697624196"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3k5-ZR-JnJ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="App Background">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
