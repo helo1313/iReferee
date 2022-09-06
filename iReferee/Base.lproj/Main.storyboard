@@ -33,6 +33,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="onLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="igk-E5-mbn"/>
+                                            <segue destination="FhM-Kl-8kD" kind="show" id="Fyg-MM-gVW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocp-Ug-RkP">
@@ -48,6 +49,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="onRegisterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZp-OL-43F"/>
+                                            <segue destination="cVV-6I-Svu" kind="show" id="dD2-Pu-Gqh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -72,9 +74,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9Qk-Id-GZu"/>
-                    <connections>
-                        <segue destination="FhM-Kl-8kD" kind="show" identifier="moveToLogin" id="ZK0-RH-QZd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,37 +88,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="euK-YC-fzl">
-                                <rect key="frame" x="30" y="487" width="368" height="255"/>
+                                <rect key="frame" x="30" y="557.33333333333337" width="368" height="184.66666666666663"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vg5-em-NXJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="368" height="40.333333333333336"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LS-gY-Tb3">
-                                                <rect key="frame" x="0.0" y="0.0" width="184" height="40.333333333333336"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Sign in">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
-                                                    <color key="baseForegroundColor" name="App ContrastGrey"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="signInButtonPressed:" destination="FhM-Kl-8kD" eventType="touchUpInside" id="R5c-Vc-UdG"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cty-br-JZk">
-                                                <rect key="frame" x="184" y="0.0" width="184" height="40.333333333333336"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Sign up">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
-                                                    <color key="baseForegroundColor" name="App ContrastGrey"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="signUpButtonPressed:" destination="FhM-Kl-8kD" eventType="touchUpInside" id="owU-y7-m01"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hsj-oZ-2jy">
-                                        <rect key="frame" x="0.0" y="70.333333333333371" width="368" height="104.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="104.66666666666667"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lGw-cb-ocI">
                                                 <rect key="frame" x="0.0" y="0.0" width="368" height="45.666666666666664"/>
@@ -138,7 +110,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmS-cA-AfB">
-                                        <rect key="frame" x="0.0" y="205" width="368" height="50"/>
+                                        <rect key="frame" x="0.0" y="134.66666666666663" width="368" height="50"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log in" cornerStyle="small">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
@@ -166,13 +138,70 @@
                         <outlet property="confirmButton" destination="qmS-cA-AfB" id="R5g-Yc-ThZ"/>
                         <outlet property="emailTextField" destination="lGw-cb-ocI" id="YV2-2H-llm"/>
                         <outlet property="passwordTextField" destination="5cV-MM-Fy4" id="7hQ-FA-1vj"/>
-                        <outlet property="signInButton" destination="7LS-gY-Tb3" id="rN8-3B-IvN"/>
-                        <outlet property="signUpButton" destination="Cty-br-JZk" id="Css-rd-oX3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcs-TN-AAz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1709" y="78"/>
+            <point key="canvasLocation" x="1866" y="-252"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="2Dy-3D-4l0">
+            <objects>
+                <viewController id="cVV-6I-Svu" customClass="RegisterViewController" customModule="iReferee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r28-8Y-bK2">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="OEV-f1-t5z">
+                                <rect key="frame" x="30" y="557.33333333333337" width="368" height="184.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nZX-DU-zv2">
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="104.66666666666667"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AZz-pW-Y2j">
+                                                <rect key="frame" x="0.0" y="0.0" width="368" height="45.666666666666664"/>
+                                                <color key="backgroundColor" name="App TextField"/>
+                                                <color key="tintColor" name="App Gray"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JWu-Nb-LdK">
+                                                <rect key="frame" x="0.0" y="60.666666666666629" width="368" height="44"/>
+                                                <color key="backgroundColor" name="App TextField"/>
+                                                <color key="tintColor" name="App Gray"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXk-8i-sss">
+                                        <rect key="frame" x="0.0" y="134.66666666666663" width="368" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Register" cornerStyle="small">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <color key="baseForegroundColor" name="App Background"/>
+                                            <color key="baseBackgroundColor" name="App ContrastGrey"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="confirmButtonPressed:" destination="FhM-Kl-8kD" eventType="touchUpInside" id="p4V-8Y-riD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Ot-XT-rZO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Ot-XT-rZO" firstAttribute="trailing" secondItem="OEV-f1-t5z" secondAttribute="trailing" constant="30" id="3PU-wD-afc"/>
+                            <constraint firstItem="9Ot-XT-rZO" firstAttribute="bottom" secondItem="OEV-f1-t5z" secondAttribute="bottom" constant="150" id="5e7-w0-0tL"/>
+                            <constraint firstItem="OEV-f1-t5z" firstAttribute="leading" secondItem="9Ot-XT-rZO" secondAttribute="leading" constant="30" id="EW1-lj-859"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NOf-A5-wGL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOd-fc-AuW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1864" y="408"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bKb-Lp-L7c">
@@ -214,6 +243,9 @@
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

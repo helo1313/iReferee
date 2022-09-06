@@ -2,7 +2,7 @@
 //  RegisterViewController.swift
 //  iReferee
 //
-//  Created by Krzysztof Kowalski on 28/08/2022.
+//  Created by Krzysztof Kowalski on 06/09/2022.
 //
 
 import UIKit
@@ -11,8 +11,6 @@ class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("Loaded register")
 
         // Do any additional setup after loading the view.
     }
