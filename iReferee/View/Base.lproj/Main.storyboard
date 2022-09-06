@@ -118,7 +118,7 @@
                                             <color key="baseBackgroundColor" name="App ContrastGrey"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="confirmButtonPressed:" destination="FhM-Kl-8kD" eventType="touchUpInside" id="nas-E8-bjo"/>
+                                            <action selector="confirmButtonPressed:" destination="FhM-Kl-8kD" eventType="touchUpInside" id="RNc-Pe-5uK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -246,7 +246,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3k5-ZR-JnJ"/>
+        <segue reference="rwi-07-dky"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="App Background">

@@ -117,9 +117,7 @@
 				09EA8FE928BB5F9E0072FB06 /* Controller */,
 				09EA8FB728B6D7F80072FB06 /* AppDelegate.swift */,
 				09EA8FB928B6D7F80072FB06 /* SceneDelegate.swift */,
-				09EA8FBD28B6D7F80072FB06 /* Main.storyboard */,
 				09EA8FC028B6D7F90072FB06 /* Assets.xcassets */,
-				09EA8FC228B6D7F90072FB06 /* LaunchScreen.storyboard */,
 				09EA8FC528B6D7F90072FB06 /* Info.plist */,
 				09EA8FEE28BD42510072FB06 /* GoogleService-Info.plist */,
 			);
@@ -153,6 +151,8 @@
 		09EA8FE828BB5F910072FB06 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				09EA8FC228B6D7F90072FB06 /* LaunchScreen.storyboard */,
+				09EA8FBD28B6D7F80072FB06 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
