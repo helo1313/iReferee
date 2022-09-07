@@ -24,12 +24,15 @@ class RegisterViewController: UIViewController {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         
-        if (Validator.validateEmail(email)){
-            if (Validator.validatePassword(password)){
-                registerUser(email: email, password: password)
-            }
-        }
+        let isEmailValid = Validator.validateEmail(email)
+        let isPasswordValid = Validator.validatePassword(password)
         
+        if (isEmailValid && isPasswordValid){
+            registerUser(email: email, password: password)
+        } else {
+            emailTextField.backgroundColor = isEmailValid ? UIColor(named: "App TextField") : UIColor(named: "App Error")
+            passwordTextField.backgroundColor = isPasswordValid ? UIColor(named: "App TextField") : UIColor(named: "App Error")
+        }
     }
     
     func registerUser(email: String, password: String){
@@ -43,17 +46,4 @@ class RegisterViewController: UIViewController {
             
         }
     }
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
