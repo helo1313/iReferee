@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func confirmButtonPressed(_ sender: UIButton) {
-    
+        
         if let email = emailTextField.text, let password = passwordTextField.text{
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
                 if let e = error{

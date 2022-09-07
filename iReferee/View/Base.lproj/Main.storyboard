@@ -154,10 +154,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="OEV-f1-t5z">
-                                <rect key="frame" x="30" y="557.33333333333337" width="368" height="184.66666666666663"/>
+                                <rect key="frame" x="30" y="493.33333333333331" width="368" height="248.66666666666669"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nZX-DU-zv2">
-                                        <rect key="frame" x="0.0" y="0.0" width="368" height="104.66666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="168.66666666666666"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AZz-pW-Y2j">
                                                 <rect key="frame" x="0.0" y="0.0" width="368" height="45.666666666666664"/>
@@ -166,17 +166,40 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JWu-Nb-LdK">
-                                                <rect key="frame" x="0.0" y="60.666666666666629" width="368" height="44"/>
-                                                <color key="backgroundColor" name="App TextField"/>
-                                                <color key="tintColor" name="App Gray"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="2dq-x0-Xg5">
+                                                <rect key="frame" x="0.0" y="60.666666666666686" width="368" height="108"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JWu-Nb-LdK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="368" height="44"/>
+                                                        <color key="backgroundColor" name="App TextField"/>
+                                                        <color key="tintColor" name="App Gray"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-At least 8 characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvc-Zb-RJ9">
+                                                        <rect key="frame" x="0.0" y="46" width="368" height="19.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                        <color key="textColor" name="App ContrastGrey"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-At least one uppercase letter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLJ-GP-thz">
+                                                        <rect key="frame" x="0.0" y="67.333333333333371" width="368" height="19.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                        <color key="textColor" name="App ContrastGrey"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-At least one special character" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaH-n5-NtA">
+                                                        <rect key="frame" x="0.0" y="88.666666666666629" width="368" height="19.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                        <color key="textColor" name="App ContrastGrey"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXk-8i-sss">
-                                        <rect key="frame" x="0.0" y="134.66666666666663" width="368" height="50"/>
+                                        <rect key="frame" x="0.0" y="198.66666666666669" width="368" height="50"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Register" cornerStyle="small">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
@@ -246,7 +269,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rwi-07-dky"/>
+        <segue reference="3k5-ZR-JnJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="App Background">

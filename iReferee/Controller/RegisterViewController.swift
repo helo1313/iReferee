@@ -21,16 +21,26 @@ class RegisterViewController: UIViewController {
     
     @IBAction func confirmButtonPressed(_ sender: UIButton) {
         
-        if let email = emailTextField.text, let password = passwordTextField.text{
-            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-                if let e = error{
-                    print(e.localizedDescription)
-                } else {
-                    // Register successful
-                    self.performSegue(withIdentifier: "registerSuccessful", sender: self)
-                }
-                
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        
+        if (Validator.validateEmail(email)){
+            if (Validator.validatePassword(password)){
+                registerUser(email: email, password: password)
             }
+        }
+        
+    }
+    
+    func registerUser(email: String, password: String){
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if let e = error{
+                print(e.localizedDescription)
+            } else {
+                // Register successful
+                self.performSegue(withIdentifier: "registerSuccessful", sender: self)
+            }
+            
         }
     }
     
