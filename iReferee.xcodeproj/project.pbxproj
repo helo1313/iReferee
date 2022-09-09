@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		09C776F928C775D700045AB0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C776F828C775D700045AB0 /* RegisterViewController.swift */; };
 		09C776FB28C8AAB300045AB0 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C776FA28C8AAB300045AB0 /* Validator.swift */; };
+		09C776FD28CB693500045AB0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C776FC28CB693500045AB0 /* MenuViewController.swift */; };
+		09C776FF28CB6AEC00045AB0 /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C776FE28CB6AEC00045AB0 /* MatchesTableViewController.swift */; };
 		09EA8FB828B6D7F80072FB06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA8FB728B6D7F80072FB06 /* AppDelegate.swift */; };
 		09EA8FBA28B6D7F80072FB06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA8FB928B6D7F80072FB06 /* SceneDelegate.swift */; };
 		09EA8FBC28B6D7F80072FB06 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA8FBB28B6D7F80072FB06 /* TitleViewController.swift */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		09C776F828C775D700045AB0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		09C776FA28C8AAB300045AB0 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		09C776FC28CB693500045AB0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		09C776FE28CB6AEC00045AB0 /* MatchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableViewController.swift; sourceTree = "<group>"; };
 		09EA8FB428B6D7F80072FB06 /* iReferee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iReferee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09EA8FB728B6D7F80072FB06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09EA8FB928B6D7F80072FB06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 				09EA8FBB28B6D7F80072FB06 /* TitleViewController.swift */,
 				09EA8FEA28BC02160072FB06 /* LoginViewController.swift */,
 				09C776F828C775D700045AB0 /* RegisterViewController.swift */,
+				09C776FC28CB693500045AB0 /* MenuViewController.swift */,
+				09C776FE28CB6AEC00045AB0 /* MatchesTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -366,8 +372,10 @@
 				09EA8FEB28BC02160072FB06 /* LoginViewController.swift in Sources */,
 				09C776F928C775D700045AB0 /* RegisterViewController.swift in Sources */,
 				09EA8FBC28B6D7F80072FB06 /* TitleViewController.swift in Sources */,
+				09C776FD28CB693500045AB0 /* MenuViewController.swift in Sources */,
 				09EA8FB828B6D7F80072FB06 /* AppDelegate.swift in Sources */,
 				09C776FB28C8AAB300045AB0 /* Validator.swift in Sources */,
+				09C776FF28CB6AEC00045AB0 /* MatchesTableViewController.swift in Sources */,
 				09EA8FBA28B6D7F80072FB06 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
